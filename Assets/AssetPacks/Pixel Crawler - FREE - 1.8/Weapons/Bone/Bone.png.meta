@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -101,6 +101,30 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -109,9 +133,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 112
-        width: 32
-        height: 32
+        y: 64
+        width: 16
+        height: 79
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,10 +153,10 @@ TextureImporter:
       name: Bone_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 112
-        width: 32
-        height: 32
+        x: 20
+        y: 128
+        width: 6
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,10 +174,10 @@ TextureImporter:
       name: Bone_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 112
-        width: 32
-        height: 32
+        x: 32
+        y: 134
+        width: 16
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,10 +195,10 @@ TextureImporter:
       name: Bone_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 112
-        width: 32
-        height: 32
+        x: 51
+        y: 129
+        width: 11
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,10 +216,10 @@ TextureImporter:
       name: Bone_4
       rect:
         serializedVersion: 2
-        x: 128
-        y: 112
-        width: 32
-        height: 32
+        x: 67
+        y: 96
+        width: 10
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,10 +237,10 @@ TextureImporter:
       name: Bone_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 80
-        width: 32
-        height: 32
+        x: 81
+        y: 130
+        width: 26
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,10 +258,10 @@ TextureImporter:
       name: Bone_6
       rect:
         serializedVersion: 2
-        x: 32
-        y: 80
-        width: 32
-        height: 32
+        x: 112
+        y: 128
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,10 +279,10 @@ TextureImporter:
       name: Bone_7
       rect:
         serializedVersion: 2
-        x: 64
-        y: 80
-        width: 32
-        height: 32
+        x: 129
+        y: 128
+        width: 14
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,10 +300,10 @@ TextureImporter:
       name: Bone_8
       rect:
         serializedVersion: 2
-        x: 96
-        y: 80
-        width: 32
-        height: 32
+        x: 145
+        y: 128
+        width: 14
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,10 +321,10 @@ TextureImporter:
       name: Bone_9
       rect:
         serializedVersion: 2
-        x: 128
-        y: 80
-        width: 32
-        height: 32
+        x: 17
+        y: 64
+        width: 14
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,10 +342,10 @@ TextureImporter:
       name: Bone_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 48
-        width: 32
-        height: 32
+        x: 37
+        y: 100
+        width: 6
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -339,10 +363,10 @@ TextureImporter:
       name: Bone_11
       rect:
         serializedVersion: 2
-        x: 32
-        y: 48
-        width: 32
-        height: 32
+        x: 48
+        y: 97
+        width: 16
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -360,10 +384,10 @@ TextureImporter:
       name: Bone_12
       rect:
         serializedVersion: 2
-        x: 64
-        y: 48
-        width: 32
-        height: 32
+        x: 83
+        y: 105
+        width: 10
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,6 +397,132 @@ TextureImporter:
       bones: []
       spriteID: f9e70b998676cdb44910daaad68895e3
       internalID: 1110000194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_13
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 83
+        width: 10
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04d8d5685d6bc446b302fc40dd1cd89
+      internalID: 2086285962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_14
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 83
+        width: 12
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cc7c7c897a4fe845a2626e3b9b932dd
+      internalID: -503485885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_15
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 101
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbeffe93880021e448563245f191fa92
+      internalID: 1468959836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d0b9deef5683848aadea04083623a4
+      internalID: 299172367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_17
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 64
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7220aca6152db37419fe4cf9c54b6382
+      internalID: -2003708981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_18
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 66
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c910230968786448c71b2f0ac69c21
+      internalID: 1876397412
       vertices: []
       indices: 
       edges: []
@@ -393,6 +543,12 @@ TextureImporter:
       Bone_10: -1716808371
       Bone_11: -607404952
       Bone_12: 1110000194
+      Bone_13: 2086285962
+      Bone_14: -503485885
+      Bone_15: 1468959836
+      Bone_16: 299172367
+      Bone_17: -2003708981
+      Bone_18: 1876397412
       Bone_2: 1662666585
       Bone_3: -947848497
       Bone_4: 1645618773
