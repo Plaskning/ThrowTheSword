@@ -18,8 +18,8 @@ public class EnemyStateMachine : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player");
-        animator = GetComponent<Animator>();
-        bodyRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponentInChildren<Animator>();
+        bodyRenderer = GetComponentInChildren<SpriteRenderer>();
         weaponRenderer = GetComponentInChildren<SpriteRenderer>();
 
         //state = States.Idle;
@@ -37,6 +37,7 @@ public class EnemyStateMachine : MonoBehaviour
             case States.Aggressive:
                 //Run anim
                 animator.SetTrigger("Run");
+                Aggressive();
                 break;
             case States.Dead:
                 break;
