@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80bb16ee7d813dc41aa17f6e354035e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flaskSpeed: 1500
+  flaskSpeed: 3000
   flaskBounce: 1
   breakEffect: {fileID: 7868312856444724287, guid: a0c484e4edb2e3d4683cd74e1820aa56, type: 3}
 --- !u!61 &312649857953515280

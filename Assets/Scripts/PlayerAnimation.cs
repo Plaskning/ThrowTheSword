@@ -42,7 +42,13 @@ public class PlayerAnimation : MonoBehaviour
 
     private void UpdateAnimation()
     {
+        //check movement input, takes the higher number, if it's 0 it check if the lower number is below 0. If so we are moving left.
+        //Positive = moving right, Negative = moving left
+
         float movement =  Mathf.Max(playerMovement.movementInput.x, playerMovement.movementInput.y);
+
+        if(movement == 0)
+            movement = Mathf.Min(playerMovement.movementInput.x, playerMovement.movementInput.y);
 
         if(movement < 0)
             movement *= -1;

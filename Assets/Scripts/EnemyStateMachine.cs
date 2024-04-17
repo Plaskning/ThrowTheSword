@@ -31,15 +31,13 @@ public class EnemyStateMachine : MonoBehaviour
         switch (state)
         {
             case States.Idle:
-                //Idle anim
-                animator.SetTrigger("Idle");
+                //Detect nearby players
                 break;
             case States.Aggressive:
-                //Run anim
-                animator.SetTrigger("Run");
-                Aggressive();
+                //Chase down nearby players
                 break;
             case States.Dead:
+                //Nothing
                 break;
             default:
                 break;
@@ -53,7 +51,22 @@ public class EnemyStateMachine : MonoBehaviour
     }
     public void ChangeState(States stateToChangeTo)
     {
-       
+        switch (state)
+        {
+            case States.Idle:
+                //Idle anim
+                animator.SetTrigger("Idle");
+                break;
+            case States.Aggressive:
+                //Run anim
+                animator.SetTrigger("Run");
+                Aggressive();
+                break;
+            case States.Dead:
+                break;
+            default:
+                break;
+        }
     }
 }
 

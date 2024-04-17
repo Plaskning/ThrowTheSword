@@ -40,6 +40,10 @@ public class Pickup : MonoBehaviour
         {
             Bounce(other);
         }
+        else if (other.gameObject.CompareTag("Player"))
+        {
+            Bounce(other);
+        }
     }
 
     public virtual void Throw(Vector2 mouseDirection, float speedMultiplier)
@@ -48,7 +52,6 @@ public class Pickup : MonoBehaviour
 
         Vector2 rotation = new Vector2(transform.position.x, transform.position.y) - mouseDirection;
         rigidbody.velocity = new Vector2(mouseDirection.x, mouseDirection.y).normalized * speed * Time.deltaTime;
-        rigidbody.drag = 0;
 
         //set direction
         //set speed
@@ -61,6 +64,10 @@ public class Pickup : MonoBehaviour
 
         var direction = Vector3.Reflect(lastVelocity.normalized, other.contacts[0].normal);
         rigidbody.velocity = direction * Mathf.Max(speed, 0);
+
+        //Bounce does not break items if set to 999
+        if (bounceAmount == 999)
+            return;
 
         if (bounceAmount <= 0)
         {

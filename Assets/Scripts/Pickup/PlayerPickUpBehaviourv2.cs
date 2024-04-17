@@ -51,6 +51,12 @@ public class PlayerPickUpBehaviourv2 : MonoBehaviour
                 rb2D.velocity = Vector2.zero;
             }
 
+            //Disable pickedup objects collider
+            Collider2D col = pickedUpObject.GetComponent<Collider2D>();
+            col.enabled = false;
+            
+
+            //set object as child and follow player
             pickedUpObject.gameObject.transform.parent = transform;
             pickedUpObject.gameObject.transform.position = pickedUpObject.transform.parent.position;
             potentialPickUpObjects.Remove(potentialPickUpObjects[0]);
@@ -59,20 +65,14 @@ public class PlayerPickUpBehaviourv2 : MonoBehaviour
 
         if (pickedUpObject != null)
         {
-            //run pickupobjects interface method
-            //IThrowable throwable = pickedUpObject.GetComponent<IThrowable>();
-            //if(throwable != null)
-            //{
-            //    throwable.Throw(((Vector3)mousePosWorld - transform.position).normalized, 1f);
-            //}
-            //Destroy(pickedUpObject);
+            
 
             Pickup pickup = pickedUpObject.GetComponent<Pickup>();
             if(pickup != null)
             {
                 pickup.Throw(((Vector3)mousePosWorld - transform.position).normalized, 1f);
             }
-            pickedUpObject = null;
+            Invoke("EnableObjectsCollider", .1f);
         }
 
 
@@ -97,5 +97,13 @@ public class PlayerPickUpBehaviourv2 : MonoBehaviour
         {
             potentialPickUpObjects.Remove(other.gameObject);
         }
+    }
+
+    private void EnableObjectsCollider()
+    {
+        //Enable pickedup objects collider REMAKE THIS. getting to many components
+        Collider2D col = pickedUpObject.GetComponent<Collider2D>();
+        col.enabled = true;
+        pickedUpObject = null;
     }
 }
